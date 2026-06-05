@@ -301,16 +301,29 @@ function Venue() {
           </div>
         </div>
 
-        <div className="mt-8 rounded-2xl overflow-hidden border border-wedding-gold/20 h-72">
-          <iframe
-            title="Карта ЗАГС"
-            src="https://yandex.ru/map-widget/v1/?ll=65.341,55.441&z=13&pt=65.3414,55.4411,pm2rdm~65.3714,55.3614,pm2gnm&l=map"
-            width="100%"
-            height="100%"
-            frameBorder="0"
-            allowFullScreen
-            style={{ border: 0 }}
-          />
+        <div className="mt-8 grid md:grid-cols-2 gap-4">
+          <div className="rounded-2xl overflow-hidden border border-wedding-gold/20 h-56">
+            <iframe
+              title="Карта ЗАГС"
+              src="https://yandex.ru/map-widget/v1/?text=Курган%2C+улица+Рихарда+Зорге%2C+48&z=16&l=map"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              allowFullScreen
+              style={{ border: 0 }}
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden border border-wedding-gold/20 h-56">
+            <iframe
+              title="Карта кафе Август"
+              src="https://yandex.ru/map-widget/v1/?text=Варгаши%2C+Комсомольская+улица%2C+31&z=16&l=map"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              allowFullScreen
+              style={{ border: 0 }}
+            />
+          </div>
         </div>
       </div>
     </section>
