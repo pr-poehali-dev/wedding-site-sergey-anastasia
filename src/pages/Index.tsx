@@ -80,35 +80,35 @@ function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center bg-white overflow-hidden py-20">
       {/* Венок + текст как открытка */}
-      <div className="relative flex items-center justify-center w-full max-w-sm mx-auto px-4">
+      <div className="relative flex items-center justify-center w-full max-w-xl mx-auto px-4">
         <img
           src={WREATH_IMG}
           alt=""
-          className="absolute inset-0 w-full h-full object-contain pointer-events-none select-none"
+          className="absolute inset-0 w-full h-full object-contain pointer-events-none select-none scale-110"
           style={{ mixBlendMode: 'multiply' }}
         />
-        <div className="relative z-10 text-center py-20 px-10">
-          <p className="font-montserrat text-[9px] tracking-[0.5em] uppercase text-stone-400 mb-5 leading-loose">
+        <div className="relative z-10 text-center py-28 px-16">
+          <p className="font-montserrat text-[10px] tracking-[0.5em] uppercase text-stone-500 mb-5 leading-loose">
             Вместе<br />и навсегда
           </p>
-          <h1 className="font-cormorant text-6xl md:text-7xl text-stone-800 font-light leading-none">
+          <h1 className="font-cormorant text-7xl md:text-8xl text-stone-900 font-light leading-none">
             Сергей
           </h1>
-          <p className="font-cormorant italic text-3xl text-[#7a2535] my-2">and</p>
-          <h1 className="font-cormorant text-6xl md:text-7xl text-stone-800 font-light leading-none mb-6">
+          <p className="font-cormorant italic text-4xl text-[#7a2535] my-3">and</p>
+          <h1 className="font-cormorant text-7xl md:text-8xl text-stone-900 font-light leading-none mb-8">
             Анастасия
           </h1>
-          <p className="font-montserrat text-[9px] tracking-[0.45em] uppercase text-stone-400 mb-2">
+          <p className="font-montserrat text-[11px] tracking-[0.45em] uppercase text-stone-600 mb-2">
             Приглашаем на свадьбу
           </p>
-          <p className="font-cormorant text-3xl text-stone-800 font-light mb-1">7 августа 2026</p>
-          <p className="font-montserrat text-[9px] tracking-[0.4em] uppercase text-stone-400 mb-5">
+          <p className="font-cormorant text-4xl text-stone-900 font-light mb-1">7 августа 2026</p>
+          <p className="font-montserrat text-[11px] tracking-[0.4em] uppercase text-stone-500 mb-6">
             Пятница, 12:40
           </p>
-          <p className="font-montserrat text-[9px] tracking-[0.35em] uppercase text-stone-400 leading-loose mb-5">
+          <p className="font-montserrat text-[10px] tracking-[0.35em] uppercase text-stone-500 leading-loose mb-6">
             Будем счастливы<br />разделить этот день<br />с вами
           </p>
-          <p className="font-cormorant italic text-2xl text-stone-500">Ждём вас</p>
+          <p className="font-cormorant italic text-3xl text-stone-600">Ждём вас</p>
         </div>
       </div>
 
