@@ -242,7 +242,7 @@ function Venue() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white/5 backdrop-blur-sm border border-wedding-gold/20 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
+          <div className="bg-white/5 backdrop-blur-sm border border-wedding-gold/20 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 flex flex-col">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 rounded-full bg-wedding-red/20 border border-wedding-red/40 flex items-center justify-center text-xl">💍</div>
               <div>
@@ -250,44 +250,67 @@ function Venue() {
                 <h3 className="font-cormorant text-2xl text-white">Дворец бракосочетания</h3>
               </div>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-3 flex-1">
               <div className="flex items-start gap-3">
                 <Icon name="MapPin" size={16} className="text-wedding-gold mt-0.5 flex-shrink-0" />
-                <p className="font-montserrat text-sm text-white/70 font-light">Уточните адрес у молодожёнов</p>
+                <p className="font-montserrat text-sm text-white/70 font-light">г. Курган, ул. Рихарда Зорге, 48</p>
               </div>
               <div className="flex items-start gap-3">
                 <Icon name="Clock" size={16} className="text-wedding-gold mt-0.5 flex-shrink-0" />
                 <p className="font-montserrat text-sm text-white/70 font-light">Просим прибыть к 12:20</p>
               </div>
             </div>
+            <a
+              href="https://yandex.ru/maps/?text=Курган,+ул.+Рихарда+Зорге,+48"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 flex items-center justify-center gap-2 border border-wedding-gold/40 text-wedding-gold font-montserrat text-xs tracking-widest uppercase py-3 hover:bg-wedding-gold/10 transition-all duration-300"
+            >
+              <Icon name="Navigation" size={14} />
+              Построить маршрут
+            </a>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm border border-wedding-gold/20 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
+          <div className="bg-white/5 backdrop-blur-sm border border-wedding-gold/20 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 flex flex-col">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 rounded-full bg-wedding-green/20 border border-wedding-green/40 flex items-center justify-center text-xl">🥂</div>
               <div>
                 <p className="font-montserrat text-xs tracking-widest uppercase text-wedding-gold">17:00</p>
-                <h3 className="font-cormorant text-2xl text-white">Ресторан торжества</h3>
+                <h3 className="font-cormorant text-2xl text-white">Кафе «Август»</h3>
               </div>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-3 flex-1">
               <div className="flex items-start gap-3">
                 <Icon name="MapPin" size={16} className="text-wedding-gold mt-0.5 flex-shrink-0" />
-                <p className="font-montserrat text-sm text-white/70 font-light">Уточните адрес у молодожёнов</p>
+                <p className="font-montserrat text-sm text-white/70 font-light">р.п. Варгаши, Комсомольская ул., 31</p>
               </div>
               <div className="flex items-start gap-3">
                 <Icon name="Clock" size={16} className="text-wedding-gold mt-0.5 flex-shrink-0" />
                 <p className="font-montserrat text-sm text-white/70 font-light">Банкет, танцы и торжество</p>
               </div>
             </div>
+            <a
+              href="https://yandex.ru/maps/?text=Варгаши,+Комсомольская+улица,+31"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 flex items-center justify-center gap-2 border border-wedding-gold/40 text-wedding-gold font-montserrat text-xs tracking-widest uppercase py-3 hover:bg-wedding-gold/10 transition-all duration-300"
+            >
+              <Icon name="Navigation" size={14} />
+              Построить маршрут
+            </a>
           </div>
         </div>
 
-        <div className="mt-8 rounded-2xl overflow-hidden border border-wedding-gold/20 h-64 bg-white/5 flex items-center justify-center">
-          <div className="text-center">
-            <Icon name="Map" size={48} className="text-wedding-gold/40 mx-auto mb-3" />
-            <p className="font-montserrat text-sm text-white/40 tracking-wide">Карта будет добавлена после уточнения адресов</p>
-          </div>
+        <div className="mt-8 rounded-2xl overflow-hidden border border-wedding-gold/20 h-72">
+          <iframe
+            title="Карта ЗАГС"
+            src="https://yandex.ru/map-widget/v1/?ll=65.341,55.441&z=13&pt=65.3414,55.4411,pm2rdm~65.3714,55.3614,pm2gnm&l=map"
+            width="100%"
+            height="100%"
+            frameBorder="0"
+            allowFullScreen
+            style={{ border: 0 }}
+          />
         </div>
       </div>
     </section>
