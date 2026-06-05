@@ -91,27 +91,27 @@ function Hero() {
         />
         {/* Текстовый блок вписан в овальную область венка */}
         <div className="relative z-10 text-center flex flex-col items-center justify-center" style={{ width: 260, marginTop: 10 }}>
-          <p className="font-montserrat text-[9px] tracking-[0.45em] uppercase text-stone-500 mb-3 leading-loose">
+          <p className="font-montserrat text-[9px] tracking-[0.45em] uppercase text-black mb-3 leading-loose">
             Вместе&nbsp;и&nbsp;навсегда
           </p>
-          <h1 className="font-cormorant text-6xl text-stone-900 font-light leading-none">
+          <h1 className="font-cormorant text-6xl text-black font-light leading-none">
             Сергей
           </h1>
           <p className="font-cormorant italic text-3xl text-[#7a2535] my-2">and</p>
-          <h1 className="font-cormorant text-6xl text-stone-900 font-light leading-none mb-5">
+          <h1 className="font-cormorant text-6xl text-black font-light leading-none mb-5">
             Анастасия
           </h1>
-          <p className="font-montserrat text-[9px] tracking-[0.4em] uppercase text-stone-600 mb-1">
+          <p className="font-montserrat text-[9px] tracking-[0.4em] uppercase text-black mb-1">
             Приглашаем на свадьбу
           </p>
-          <p className="font-cormorant text-3xl text-stone-900 font-light mb-0.5">7 августа 2026</p>
-          <p className="font-montserrat text-[9px] tracking-[0.35em] uppercase text-stone-500 mb-4">
+          <p className="font-cormorant text-3xl text-black font-light mb-0.5">7 августа 2026</p>
+          <p className="font-montserrat text-[9px] tracking-[0.35em] uppercase text-black mb-4">
             Пятница, 12:40
           </p>
-          <p className="font-montserrat text-[9px] tracking-[0.3em] uppercase text-stone-500 leading-loose mb-4">
+          <p className="font-montserrat text-[9px] tracking-[0.3em] uppercase text-black leading-loose mb-4">
             Будем счастливы<br />разделить этот день<br />с вами
           </p>
-          <p className="font-cormorant italic text-2xl text-stone-600">Ждём вас</p>
+          <p className="font-cormorant italic text-2xl text-black">Ждём вас</p>
         </div>
       </div>
 
@@ -252,12 +252,6 @@ function Venue() {
 }
 
 function Gallery() {
-  const photos = [
-    { src: COUPLE_IMG, cls: 'md:col-span-2 md:row-span-2' },
-    { src: 'https://cdn.poehali.dev/projects/0142fc86-07ad-444d-a33f-86ee9a4768a2/files/f9af8c59-01ca-4226-a385-b687fab52664.jpg', cls: '' },
-    { src: COUPLE_IMG, cls: '' },
-    { src: 'https://cdn.poehali.dev/projects/0142fc86-07ad-444d-a33f-86ee9a4768a2/files/f9af8c59-01ca-4226-a385-b687fab52664.jpg', cls: 'md:col-span-2' },
-  ];
   return (
     <FloralSection id="gallery">
       <div className="max-w-3xl mx-auto">
@@ -265,17 +259,11 @@ function Gallery() {
         <p className="font-montserrat text-sm text-black text-center -mt-3 mb-8">
           Скидывайте свои фотографии, сделанные на нашем торжестве, в общий чат, чтобы все гости могли ими полюбоваться :)
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 auto-rows-[180px]">
-          {photos.map((p, i) => (
-            <div key={i} className={`${p.cls} overflow-hidden group cursor-pointer rounded-sm`}>
-              <div className="relative w-full h-full">
-                <img src={p.src} alt="" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-all duration-300" />
-              </div>
-            </div>
-          ))}
+        <div className="bg-white/60 backdrop-blur-sm rounded-sm p-10 flex flex-col items-center gap-3">
+          <Icon name="Camera" size={40} className="text-[#7a2535] opacity-40" />
+          <p className="font-cormorant italic text-2xl text-black">Здесь появятся ваши фотографии</p>
+          <p className="font-montserrat text-xs text-black/40 tracking-widest uppercase">После свадьбы 07.08.2026</p>
         </div>
-        <p className="font-montserrat text-xs text-black/50 text-center mt-5 tracking-widest uppercase">Все фотографии появятся после свадьбы</p>
       </div>
     </FloralSection>
   );
@@ -378,16 +366,16 @@ function Contacts() {
             <div className="text-3xl mb-3">🤵</div>
             <h3 className="font-cormorant text-3xl text-black font-light mb-1">Сергей</h3>
             <p className="font-montserrat text-xs tracking-widest uppercase text-[#7a2535] mb-4">Жених</p>
-            <a href="tel:+7XXXXXXXXXX" className="inline-flex items-center justify-center gap-2 font-montserrat text-sm text-black hover:text-[#7a2535] transition-colors">
-              <Icon name="Phone" size={13} /> +7 (XXX) XXX-XX-XX
+            <a href="tel:+79125759583" className="inline-flex items-center justify-center gap-2 font-montserrat text-sm text-black hover:text-[#7a2535] transition-colors">
+              <Icon name="Phone" size={13} /> +7 (912) 575-95-83
             </a>
           </div>
           <div className="bg-white/60 backdrop-blur-sm rounded-sm p-7">
             <div className="text-3xl mb-3">👰</div>
             <h3 className="font-cormorant text-3xl text-black font-light mb-1">Анастасия</h3>
             <p className="font-montserrat text-xs tracking-widest uppercase text-[#7a2535] mb-4">Невеста</p>
-            <a href="tel:+7XXXXXXXXXX" className="inline-flex items-center justify-center gap-2 font-montserrat text-sm text-black hover:text-[#7a2535] transition-colors">
-              <Icon name="Phone" size={13} /> +7 (XXX) XXX-XX-XX
+            <a href="tel:+79322535545" className="inline-flex items-center justify-center gap-2 font-montserrat text-sm text-black hover:text-[#7a2535] transition-colors">
+              <Icon name="Phone" size={13} /> +7 (932) 253-55-45
             </a>
           </div>
         </div>
